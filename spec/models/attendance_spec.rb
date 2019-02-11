@@ -1,9 +1,16 @@
 require 'rails_helper'
-=begin
+
 RSpec.describe Attendance, type: :model do
-	it "should create a Attendance and be equal to 1" do
-		Attendance.create(stripe_customer_id: "d54ffsddfsdf12s15fds4f")
-		expect(Attendance.count).to eq(1)
+
+	before(:each) do
+		@attendance = FactoryBot.create(:attendance)
+	end
+
+	it "has a valid factory" do
+		expect(build(:attendance)).to be_valid
+	end
+
+	it 'should validates attendance with attributes' do 
+		expect(@attendance).to be_a(Attendance)
 	end
 end
-=end

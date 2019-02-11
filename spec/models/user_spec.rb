@@ -1,5 +1,5 @@
 require 'rails_helper'
-=begin
+
 RSpec.describe User, type: :model do
 
   before(:each) do
@@ -31,4 +31,3 @@ RSpec.describe User, type: :model do
 		expect(@user.last_name).to be_a(String)
 	end
 end
-=end
