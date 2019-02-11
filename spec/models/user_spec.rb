@@ -1,9 +1,19 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+
+  before(:each) do
+    @user = User.create(email: "blablabla@hotmail.com",description: "Blablabla",first_name: "John", last_name: "Doe")
+	end
+	
+	  it "is valid with valid attributes" do
+       expect(@user).to be_a(User)
+       expect(@user).to be_valid
+    end
+
 	it "should create a User and be equal to 1" do
 		User.create(email: "blablabla@gmail.com")
-		expect(User.count).to eq(1)
+		expect(User.count).to eq(2)
 	end
 
 	it "should create a user related to the attendance" do 
