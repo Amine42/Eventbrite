@@ -9,11 +9,7 @@ Attendance.destroy_all
 end
 
 10.times do
-<<<<<<< HEAD
   event = Event.create!(title: Faker::Book.title, description: Faker::Lorem.paragraph, price: Faker::Number.number(1..1000), location: Faker::Address.city, duration: Faker::Number.number(1..150), start_date: Faker::Date.forward(200))
-=======
-  event = Event.create!(title: Faker::Book.title, description: Faker::Lorem.paragraph, price: rand(1..1000), location: Faker::Address.city, start_date: Faker::Date.forward(200), duration: rand(1..150) * 5)
->>>>>>> f3bcc7435c692fb6a7717c27c66c9352429068ca
 end
 
 10.times do
