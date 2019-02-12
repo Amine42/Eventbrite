@@ -6055,3 +6055,89 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-12 20:02:00 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ /Users/lorenzochahid/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 20:02:00 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lorenzochahid/.rvm/gems/ruby-2.5.1/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lorenzochahid/.rvm/gems/ruby-2.5.1/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (13.6ms)
+Completed 200 OK in 36ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-12 20:02:00 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ /Users/lorenzochahid/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 20:02:00 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lorenzochahid/.rvm/gems/ruby-2.5.1/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lorenzochahid/.rvm/gems/ruby-2.5.1/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (52.8ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-12 20:02:38 +0100
+  
+SyntaxError (/Users/lorenzochahid/Desktop/advance/Eventbrite/config/routes.rb:2: syntax error, unexpected ':', expecting keyword_end
+  root: "home#index"
+      ^
+/Users/lorenzochahid/Desktop/advance/Eventbrite/config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-12 20:02:50 +0100
+  
+SyntaxError (/Users/lorenzochahid/Desktop/advance/Eventbrite/config/routes.rb:2: syntax error, unexpected ':', expecting keyword_end
+  root: "home#index"
+      ^
+/Users/lorenzochahid/Desktop/advance/Eventbrite/config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+config/routes.rb:2: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:7: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-12 20:03:38 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ /Users/lorenzochahid/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 22ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 20:03:38 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 96ms (Views: 83.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-12 20:03:44 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ /Users/lorenzochahid/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-12 20:03:44 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
