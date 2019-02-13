@@ -7,4 +7,26 @@
     <p>cette event aura lieux dans cette ville: <%= @event.location %></p>
     <p>Participer a cette event coute : <%= @event.price %>euro!</p>
     <p>event cree par: <%= User.find(@event.admin_id).email %></p>
+
+    <%= form_tag events_path do %>
+        <article>
+            <% if flash[:error].present? %>
+            <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+            </div>
+            <% end %>
+            <label class="amount">
+            <span>Pour rejoindre l'événement, merci de payer l'inscription :<br><span><%= @event.price %></span></span>
+            </label>
+        </article>
+
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-description="INSCRIPTION EVENT"
+                data-amount=<%= @event.price * 100 %>
+                data-currency="lorenzo"
+                data-locale="auto"></script>
+        <% end %>
+     <div>
+    
 </div>
