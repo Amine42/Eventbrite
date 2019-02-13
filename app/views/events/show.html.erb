@@ -23,8 +23,8 @@
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
                 data-description="INSCRIPTION EVENT"
-                data-amount=<%= @event.price * 100 %>
-                data-currency="eu"
+                data-amount="<%= @event.price * 100 %>"
+                data-currency="eur"
                 data-locale="auto"></script>
         <% end %>
      <div>
