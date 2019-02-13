@@ -4,6 +4,7 @@
         <h2><%= @user.first_name %>  <%= @user.last_name %></h2>
         <p>description de l'utilisateur: <%= @user.description %></p>
         <p>email de l'utilisateur: <%= @user.email %></p>
+        <a href="<%= edit_user_registration_path %>">changer de mot de passe</a>
     </div>
 <% else %>
     <h1 class="text-center m-4 mb-5">Vous n'avez pas acces a cette page</h1>
