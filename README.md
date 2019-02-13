@@ -1,24 +1,19 @@
-# README
+# Event Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Installation et préparation
 
-* Ruby version
+* git clone https://github.com/Malik42/Eventbrite
 
-* System dependencies
+* run  bundle install
 
-* Configuration
+* run rails db:create
 
-* Database creation
+* run rails db:migrate
 
-* Database initialization
+* run rails db:seed
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Contributors
+- Amine : @A42
+- Lorenzo : @Lorenzo
+- Malik : @Malik
