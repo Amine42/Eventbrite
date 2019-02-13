@@ -1,7 +1,7 @@
 require 'faker'
 
-User.destroy_all
 Event.destroy_all
+User.destroy_all
 Attendance.destroy_all
 
 10.times do
