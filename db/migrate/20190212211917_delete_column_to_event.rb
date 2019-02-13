@@ -1,0 +1,5 @@
+class DeleteColumnToEvent < ActiveRecord::Migration[5.2]
+  def change
+    remove_column :events, :admin_id
+  end
+end

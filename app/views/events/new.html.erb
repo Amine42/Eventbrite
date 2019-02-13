@@ -1,0 +1,30 @@
+<h1 class="text-center">cree un event</h1>
+<div class="col-6 m-auto">
+    <%= form_tag url_for(action: 'create'), method: "post" do %>
+        <div class="form-group">
+            <%= label_tag "titre de l'event" %>
+            <%= text_field_tag 'title', @title, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= label_tag "description de l'event" %>
+            <%= text_area_tag 'description', @description, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= label_tag "lieux de l'event" %>
+            <%= text_field_tag 'location', @location, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= label_tag "date de debut" %>
+            <%= datetime_field_tag 'start_date', @start_date, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= label_tag "duree de l'event (en minutes, multiple de 5)" %>
+            <%= number_field_tag 'duration', @duration, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= label_tag "prix de l'event" %>
+            <%= number_field_tag 'price', @price, class: "form-control" %>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Crée cette event!">
+    <% end %>
+</div>

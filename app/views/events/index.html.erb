@@ -1,0 +1,20 @@
+<h1 class="text-center m-4 mb-5">Bienvenue à toi visiteur</h1>
+<div class="row col-10 m-auto">
+    <% @event.each do |event| %>
+        <div class="col-sm-6 mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><%= event.title %></h5>
+                    <p class="card-text">Cette event a ete cree par: <%= User.find(event.admin_id).email %>.</p>
+                    <p class="card-text">prix: <%= event.price %>.</p>
+                    <a href="<%= event_path(event.id) %>" class="btn btn-primary">Voir l'event</a>
+                </div>
+            </div>
+        </div>
+    <% end %>
+    <% if user_signed_in? %>
+        <a href="<%= new_event_path %>" class="btn btn-primary">cree un event</a>
+    <%else%>
+        <a href="<%= new_user_session_path %>" class="btn btn-primary">cree une event</a>
+    <% end %>
+</div>
