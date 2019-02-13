@@ -8,7 +8,7 @@
     <p>Participer a cette event coute : <%= @event.price %>euro!</p>
     <p>event cree par: <%= User.find(@event.admin_id).email %></p>
 
-    <%= form_tag events_path do %>
+    <%= form_tag charges_path do %>
         <article>
             <% if flash[:error].present? %>
             <div id="error_explanation">
@@ -24,7 +24,7 @@
                 data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
                 data-description="INSCRIPTION EVENT"
                 data-amount=<%= @event.price * 100 %>
-                data-currency="lorenzo"
+                data-currency="eu"
                 data-locale="auto"></script>
         <% end %>
      <div>
