@@ -3,9 +3,9 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  has_many :attendances, dependent: :destroy
-  has_many :events, through: :attendances, dependent: :destroy # ffffff
-  has_many :events, dependent: :destroy
+  has_many :attendances
+  has_many :events, through: :attendances # ffffff
+  has_many :events
 
   validates :password, :presence => true,
     :confirmation => true,
