@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: "events#index"
   get 'home/index'
   get 'home/secret'
-  post 'events/create'
+  get 'events/create'
  
   devise_for :users
   resources :events do
