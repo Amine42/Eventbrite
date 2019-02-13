@@ -45,7 +45,7 @@ class EventsController < ApplicationController
       :source  => params[:stripeToken]
     )
 
-    charge = Stripe::Event.create(
+    charge = Stripe::Charges.create(
       :customer    => customer.id,
       :amount      => @amount,
       :description => 'Rails Stripe customer',
