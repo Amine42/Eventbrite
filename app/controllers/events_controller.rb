@@ -6,7 +6,11 @@ class EventsController < ApplicationController
 
   def show
     # Méthode qui récupère le potin concerné et l'envoie à la view show (show.html.erb) pour affichage
-    @event = Event.find(params[:id])
+    if Event.last.id < params[:id].to_i || Event.first.id > params[:id].to_i
+      redirect_to '/'
+    else
+      @event = Event.find(params[:id])
+    end
   end
 
   def new
@@ -17,8 +21,13 @@ class EventsController < ApplicationController
     # Méthode qui créé un potin à partir du contenu du formulaire de new.html.erb, soumis par l'utilisateur
     # pour info, le contenu de ce formulaire sera accessible dans le hash params (ton meilleur pote)
     # Une fois la création faite, on redirige généralement vers la méthode show (pour afficher le potin créé)
-    @event = Event.create!(title: params["title"], description: params["description"], price: params["price"], location: params["location"], duration: params["duration"], start_date: params["start_date"], admin_id: current_user.id)
-    redirect_to event_path(@event.id)
+    if params[:title] == "" || params[:description] == "" || params[:price] == "" || params[:location] == "" || params[:duration] == "" || params[:duration].to_i % 5 != 0 || params[:start_date] == "" 
+      redirect_to new_event_path
+      puts "non tu a pas remplit le formulaire"
+    else
+      @event = Event.create!(title: params["title"], description: params["description"], price: params["price"], location: params["location"], duration: params["duration"], start_date: params["start_date"], admin_id: current_user.id)
+      redirect_to event_path(@event.id)
+    end
   end
 
   def edit
