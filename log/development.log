@@ -9814,3 +9814,421 @@ Processing by EventsController#show as HTML
 Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-13 03:49:59 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/a42/programmation/THP/Eventbrite/app/controllers/application_controller.rb:7: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/application_controller.rb:7: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/events_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2019-02-13 03:51:38 +0100
+  
+SyntaxError (/home/a42/programmation/THP/Eventbrite/app/controllers/application_controller.rb:7: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/application_controller.rb:7: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/events_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2019-02-13 03:52:26 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:15
+  Rendered events/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 620ms (Views: 563.7ms | ActiveRecord: 7.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-02-13 03:52:33 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+4TFCgv7iB4Hbqtod7Kz7LJ8Hdx2M6DRHQPaT4lUVU5uV1oGz/opZ+ikj+UPESm3wm5jakDnoEVnNNijec7Mmw=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 66ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-13 03:52:33 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  Rendered events/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 03:52:39 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (78.9ms)
+Completed 200 OK in 117ms (Views: 115.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-13 03:52:48 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  Rendered events/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-13 03:52:50 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 03:52:53 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/registrations/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:03:37 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered users/shared/_links.html.erb (0.7ms)
+  Rendered users/registrations/new.html.erb within layouts/application (61.6ms)
+Completed 200 OK in 279ms (Views: 257.6ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-13 04:03:59 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RPhyLt1VYaWq+MA7zzhZDjF0mhzMzdDF80ruFgIBGsHUgK+krxcum4GDHnGY3ozt1lCSPtT/WJVYJPPHjQeGgQ==", "user"=>{"email"=>"test@hotmail.fr", "first_name"=>"amine", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@hotmail.fr"], ["LIMIT", 1]]
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "first_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "test@hotmail.fr"], ["encrypted_password", "$2a$11$2/81pkoL.yuHHMtSJg90Per1ka3ExiXXIbWFiYh4iJdtqtIodL/7y"], ["first_name", "amine"], ["created_at", "2019-02-13 03:03:59.506477"], ["updated_at", "2019-02-13 03:03:59.506477"]]
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (57.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 175ms (ActiveRecord: 58.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-13 04:03:59 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:15
+  Rendered events/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 44ms (Views: 36.7ms | ActiveRecord: 4.4ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-02-13 04:06:14 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ivT9srZkbhu/gX9pEIaoNs+w25TJfjGmWL4+PY97qCIajCA4xCYhJZT6oSNHYH3VKJTTttFMufbz0CPsAH00Yg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-13 04:06:14 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  Rendered events/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 66ms (Views: 37.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-13 04:06:16 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.1ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:06:18 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (309.2ms)
+Completed 500 Internal Server Error in 312ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `textarea_field' for #<ActionView::Helpers::FormBuilder:0x00007fa5698826b8>
+Did you mean?  text_field):
+    20: 
+    21:   <div class="field">
+    22:     <%= f.label :description %><br />
+    23:     <%= f.textarea_field :description, autocomplete: "description" %>
+    24:   </div>
+    25: 
+    26:   <div class="field">
+  
+app/views/users/registrations/new.html.erb:23:in `block in _app_views_users_registrations_new_html_erb__3168355648477074901_70174208782200'
+app/views/users/registrations/new.html.erb:3:in `_app_views_users_registrations_new_html_erb__3168355648477074901_70174208782200'
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:07:29 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered users/registrations/new.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:09:37 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered users/shared/_links.html.erb (1.3ms)
+  Rendered users/registrations/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 55ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:09:55 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered users/shared/_links.html.erb (0.7ms)
+  Rendered users/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:10:20 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered users/shared/_links.html.erb (1.1ms)
+  Rendered users/registrations/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:11:52 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered users/shared/_links.html.erb (1.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:12:51 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/registrations/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/a42/programmation/THP/Eventbrite/app/views/users/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+...pend=( f.submit "Sign up" class: "btn btn-primary" );@output...
+...                          ^~~~~):
+  
+app/views/users/registrations/new.html.erb:40: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:13:04 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered users/shared/_links.html.erb (0.8ms)
+  Rendered users/registrations/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:13:55 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered users/shared/_links.html.erb (0.7ms)
+  Rendered users/registrations/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-13 04:14:12 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered /home/a42/.rvm/gems/ruby-2.5.1/gems/devise-4.6.1/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered users/shared/_links.html.erb (0.8ms)
+  Rendered users/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-13 04:15:14 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sTv//8YU6QtRYwHCpZ/7t0TJyrd6E4Vgbuufe+K+jRfHR1BV8NGftjM3oBMzt8cZpz6FD1uMsf4y8Qd0vafeCg==", "user"=>{"email"=>"aminebouraghda@gmail.com", "first_name"=>"amine", "last_name"=>"bouraghda", "description"=>"je test une description pour voi si ca fonctionne", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aminebouraghda@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "aminebouraghda@gmail.com"], ["encrypted_password", "$2a$11$DlImUC4cQS5jAWgenqROweCvHoN9nTem5nTHVjhpo4yOp.0TOVBim"], ["description", "je test une description pour voi si ca fonctionne"], ["first_name", "amine"], ["last_name", "bouraghda"], ["created_at", "2019-02-13 03:15:14.653255"], ["updated_at", "2019-02-13 03:15:14.653255"]]
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (46.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/a42/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 167ms (ActiveRecord: 47.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-13 04:15:14 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:15
+  Rendered events/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
