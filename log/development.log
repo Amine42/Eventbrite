@@ -13065,3 +13065,529 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 53ms (Views: 49.5ms | ActiveRecord: 2.5ms)
 
 
+  [1m[35m (16.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (98.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Destroy (39.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 74]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:3
+  [1m[35m (36.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:3
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (4.5ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:3
+  [1m[35m (11.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:3
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (4.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (3.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:3
+  [1m[35m (13.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:3
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:3
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:3
+  [1m[35m (14.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (4.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (2.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:3
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:3
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (1.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:3
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:3
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:3
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mEvent Destroy (0.3ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 35]]
+  ↳ db/seeds.rb:3
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 74]]
+  ↳ db/seeds.rb:4
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 75]]
+  ↳ db/seeds.rb:4
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 76]]
+  ↳ db/seeds.rb:4
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 77]]
+  ↳ db/seeds.rb:4
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 78]]
+  ↳ db/seeds.rb:4
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 79]]
+  ↳ db/seeds.rb:4
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 80]]
+  ↳ db/seeds.rb:4
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 81]]
+  ↳ db/seeds.rb:4
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 82]]
+  ↳ db/seeds.rb:4
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:4
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 85]]
+  ↳ db/seeds.rb:4
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 86]]
+  ↳ db/seeds.rb:4
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:4
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 87]]
+  ↳ db/seeds.rb:4
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[36mAttendance Load (59.8ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.3ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:5
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.3ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:5
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.3ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:5
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.2ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:5
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.3ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:5
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.2ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:5
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.3ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:5
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.4ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:5
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.2ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:5
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAttendance Destroy (0.4ms)[0m  [1m[31mDELETE FROM "attendances" WHERE "attendances"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:5
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "caitlin@romagueraokeefe.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (39.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "caitlin@romagueraokeefe.com"], ["encrypted_password", "$2a$11$l/RwrFmZRKtANuCCHHvvZ.7Rii94aE2IngnPDxsJTYWuPZZ3.IzGe"], ["description", "Repellendus qui occaecati. Numquam beatae voluptas. Iure qui autem."], ["first_name", "Glen"], ["last_name", "Cummings"], ["created_at", "2019-02-13 21:24:36.930825"], ["updated_at", "2019-02-13 21:24:36.930825"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jean@brownfadel.name"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "jean@brownfadel.name"], ["encrypted_password", "$2a$11$iv2RqCB.ctuQe6HSqKxeuuLkOW.ih4.9T5yu/zJKHEsDuZqmO8.D2"], ["description", "Dolorem doloremque veniam. Doloribus voluptatem asperiores. Temporibus dignissimos harum."], ["first_name", "Cira"], ["last_name", "Heller"], ["created_at", "2019-02-13 21:24:37.100892"], ["updated_at", "2019-02-13 21:24:37.100892"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "arnulfobergnaum@jakubowski.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "arnulfobergnaum@jakubowski.net"], ["encrypted_password", "$2a$11$x5W6aOMQC2.Uu62Qjntug.CJq51GV5a6gPplIO1esfrezUqSRoMpC"], ["description", "Neque doloribus sit. Exercitationem odit iste. Aut ut nihil."], ["first_name", "Shonna"], ["last_name", "Thompson"], ["created_at", "2019-02-13 21:24:37.215831"], ["updated_at", "2019-02-13 21:24:37.215831"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "maurine@hackettgorczany.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "maurine@hackettgorczany.net"], ["encrypted_password", "$2a$11$BrfQjz1eNfx6EMfzmAuEte5nFwLfxGYYwVVpaHLbECA7MP5hs.FSi"], ["description", "Expedita voluptatibus itaque. Nihil dolorem beatae. Officia quibusdam eaque."], ["first_name", "Therese"], ["last_name", "Hoppe"], ["created_at", "2019-02-13 21:24:37.336147"], ["updated_at", "2019-02-13 21:24:37.336147"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kizzy@langworthlebsack.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "kizzy@langworthlebsack.net"], ["encrypted_password", "$2a$11$IRxrFYC5alQGueQ7B4mtY.PctJxwCFu7MCdfiNWZpl2/zlsG.zkyO"], ["description", "Assumenda veritatis non. Officia velit repudiandae. Impedit repudiandae eius."], ["first_name", "Leonardo"], ["last_name", "Windler"], ["created_at", "2019-02-13 21:24:37.472171"], ["updated_at", "2019-02-13 21:24:37.472171"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "martinledner@larson.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "martinledner@larson.io"], ["encrypted_password", "$2a$11$a2CGcpmfixa/iASRYB/.3e0nBAmJe9Cqr8UhH3MDmyvEQVN7xCmiC"], ["description", "Architecto eaque officiis. Dolor aliquam dolorem. Incidunt nihil et."], ["first_name", "Russ"], ["last_name", "Kulas"], ["created_at", "2019-02-13 21:24:37.603325"], ["updated_at", "2019-02-13 21:24:37.603325"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "marcelino@zboncak.org"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "marcelino@zboncak.org"], ["encrypted_password", "$2a$11$cjElnoBheALsRZQLPr6W1./B6BBz2pgOCRLHAXqCyWVYxvdBwvc1G"], ["description", "Quas aut est. Ratione aut pariatur. Nisi rem veritatis."], ["first_name", "Ronald"], ["last_name", "Schuppe"], ["created_at", "2019-02-13 21:24:37.720150"], ["updated_at", "2019-02-13 21:24:37.720150"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "maxhauck@hackettrosenbaum.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "maxhauck@hackettrosenbaum.io"], ["encrypted_password", "$2a$11$.OKhc.Mmv4J4Re31OTKZFeVlVkj5TUo.1HReejdkY/rPtFpbboVO."], ["description", "Et sit veritatis. Dolores unde alias. Aut error qui."], ["first_name", "Francis"], ["last_name", "Heaney"], ["created_at", "2019-02-13 21:24:37.845680"], ["updated_at", "2019-02-13 21:24:37.845680"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (10.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "chanelroob@lebsack.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "chanelroob@lebsack.io"], ["encrypted_password", "$2a$11$YWD/d36CwNgsOuTZMy6t3uube3o91WykOXz4XJ/kmhkh7uH1Ibr8G"], ["description", "Magnam id expedita. Molestias aut eveniet. Sed autem corrupti."], ["first_name", "Sha"], ["last_name", "Lang"], ["created_at", "2019-02-13 21:24:37.972080"], ["updated_at", "2019-02-13 21:24:37.972080"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "horaciopfannerstill@conroyjakubowski.info"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:8
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "horaciopfannerstill@conroyjakubowski.info"], ["encrypted_password", "$2a$11$BsiVglvN.QUlIlWJA/s.ce36jUVB/Jk/dehI67bP8Jwlg2HmVc42C"], ["description", "Quas enim quos. Tempora et quia. Quia id qui."], ["first_name", "Nakia"], ["last_name", "DuBuque"], ["created_at", "2019-02-13 21:24:38.094355"], ["updated_at", "2019-02-13 21:24:38.094355"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (4.3ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-02-26 00:00:00"], ["duration", 300], ["title", "A Confederacy of Dunces"], ["description", "Ut rerum ex. Suscipit est totam. Tempora eos quia."], ["price", 887], ["location", "East Baoberg"], ["created_at", "2019-02-13 21:24:38.103026"], ["updated_at", "2019-02-13 21:24:38.103026"], ["admin_id", 90]]
+  ↳ db/seeds.rb:12
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-08-28 00:00:00"], ["duration", 365], ["title", "Tiger! Tiger!"], ["description", "Quae dolor qui. In qui reprehenderit. Quia ex culpa."], ["price", 683], ["location", "Arttown"], ["created_at", "2019-02-13 21:24:38.120717"], ["updated_at", "2019-02-13 21:24:38.120717"], ["admin_id", 88]]
+  ↳ db/seeds.rb:12
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-07-28 00:00:00"], ["duration", 220], ["title", "Ah, Wilderness!"], ["description", "Ex consequatur quidem. Quis quis dolore. Tempora totam perspiciatis."], ["price", 257], ["location", "Sondraburgh"], ["created_at", "2019-02-13 21:24:38.136506"], ["updated_at", "2019-02-13 21:24:38.136506"], ["admin_id", 96]]
+  ↳ db/seeds.rb:12
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-08-14 00:00:00"], ["duration", 125], ["title", "Tirra Lirra by the River"], ["description", "Qui quis consequatur. Necessitatibus qui eaque. Quis eum rem."], ["price", 145], ["location", "Felicaview"], ["created_at", "2019-02-13 21:24:38.152043"], ["updated_at", "2019-02-13 21:24:38.152043"], ["admin_id", 88]]
+  ↳ db/seeds.rb:12
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-03-09 00:00:00"], ["duration", 430], ["title", "Frequent Hearses"], ["description", "Amet labore numquam. Consequatur doloribus quam. Voluptas quos est."], ["price", 427], ["location", "Wolftown"], ["created_at", "2019-02-13 21:24:38.161340"], ["updated_at", "2019-02-13 21:24:38.161340"], ["admin_id", 97]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-07-19 00:00:00"], ["duration", 535], ["title", "Consider Phlebas"], ["description", "Velit explicabo vitae. Consequuntur et voluptatem. Temporibus aut voluptas."], ["price", 129], ["location", "Sibylshire"], ["created_at", "2019-02-13 21:24:38.168109"], ["updated_at", "2019-02-13 21:24:38.168109"], ["admin_id", 95]]
+  ↳ db/seeds.rb:12
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-03-29 00:00:00"], ["duration", 490], ["title", "The Wings of the Dove"], ["description", "Occaecati voluptatibus sed. Necessitatibus quis facere. Tempore quia dolorum."], ["price", 990], ["location", "Boscoshire"], ["created_at", "2019-02-13 21:24:38.176061"], ["updated_at", "2019-02-13 21:24:38.176061"], ["admin_id", 91]]
+  ↳ db/seeds.rb:12
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-08-17 00:00:00"], ["duration", 455], ["title", "The Moving Finger"], ["description", "Et ducimus atque. Libero qui iusto. Repellendus et necessitatibus."], ["price", 815], ["location", "Schambergerfurt"], ["created_at", "2019-02-13 21:24:38.186355"], ["updated_at", "2019-02-13 21:24:38.186355"], ["admin_id", 90]]
+  ↳ db/seeds.rb:12
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-08-13 00:00:00"], ["duration", 505], ["title", "Of Human Bondage"], ["description", "Quia ab quia. Quia tempora corporis. Est quaerat totam."], ["price", 736], ["location", "Townechester"], ["created_at", "2019-02-13 21:24:38.201366"], ["updated_at", "2019-02-13 21:24:38.201366"], ["admin_id", 89]]
+  ↳ db/seeds.rb:12
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "created_at", "updated_at", "admin_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-05-25 00:00:00"], ["duration", 145], ["title", "In a Glass Darkly"], ["description", "Placeat voluptatem architecto. Amet rem atque. Repellat nihil facilis."], ["price", 471], ["location", "Allenbury"], ["created_at", "2019-02-13 21:24:38.209853"], ["updated_at", "2019-02-13 21:24:38.209853"], ["admin_id", 94]]
+  ↳ db/seeds.rb:12
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.6ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 88], ["event_id", 91], ["created_at", "2019-02-13 21:24:38.216989"], ["updated_at", "2019-02-13 21:24:38.216989"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.4ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 91], ["event_id", 94], ["created_at", "2019-02-13 21:24:38.225314"], ["updated_at", "2019-02-13 21:24:38.225314"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.4ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 93], ["event_id", 96], ["created_at", "2019-02-13 21:24:38.235494"], ["updated_at", "2019-02-13 21:24:38.235494"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 90], ["event_id", 91], ["created_at", "2019-02-13 21:24:38.242368"], ["updated_at", "2019-02-13 21:24:38.242368"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 92], ["event_id", 91], ["created_at", "2019-02-13 21:24:38.250166"], ["updated_at", "2019-02-13 21:24:38.250166"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.4ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 92], ["event_id", 89], ["created_at", "2019-02-13 21:24:38.260196"], ["updated_at", "2019-02-13 21:24:38.260196"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.4ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 90], ["event_id", 95], ["created_at", "2019-02-13 21:24:38.268303"], ["updated_at", "2019-02-13 21:24:38.268303"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 92], ["event_id", 97], ["created_at", "2019-02-13 21:24:38.275222"], ["updated_at", "2019-02-13 21:24:38.275222"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.2ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 95], ["event_id", 95], ["created_at", "2019-02-13 21:24:38.286160"], ["updated_at", "2019-02-13 21:24:38.286160"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mAttendance Create (0.3ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "user_id", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "1"], ["user_id", 92], ["event_id", 95], ["created_at", "2019-02-13 21:24:38.293497"], ["updated_at", "2019-02-13 21:24:38.293497"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
