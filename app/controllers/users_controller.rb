@@ -5,7 +5,11 @@ class UsersController < ApplicationController
 
   def show
     # Méthode qui récupère le potin concerné et l'envoie à la view show (show.html.erb) pour affichage
-    @user = User.find(params[:id])
+    if User.last.id < params[:id].to_i || User.first.id > params[:id].to_i
+      redirect_to '/'
+    else
+      @user = User.find(params[:id])
+    end
   end
 
   def new
