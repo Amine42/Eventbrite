@@ -13,6 +13,10 @@
 
 * run rails db:seed
 
+# ALLEZ SUR LA VERSION EN PRODUCTION
+
+https://pure-castle-48643.herokuapp.com/
+
 # Contributors
 - Amine : @A42
 - Lorenzo : @Lorenzo
