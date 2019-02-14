@@ -2948,3 +2948,172 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/events/56/edit" for 127.0.0.1 at 2019-02-14 01:55:33 +0100
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"56"}
+Completed 404 Not Found in 13ms (ActiveRecord: 7.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event without an ID):
+  
+app/controllers/events_controller.rb:35:in `edit'
+Started GET "/events/56/edit" for 127.0.0.1 at 2019-02-14 01:56:03 +0100
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:35
+  Rendering events/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/events/edit.html.erb:1
+  Rendered events/edit.html.erb within layouts/application (22.5ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 5.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `content' for #<Event:0x00007fe2cc034510>):
+    10:         </div>
+    11:         <div class="form-group">
+    12:             <label for="content">Contenu du potin</label>
+    13:             <%= f.text_area :content, class: 'form-control' %>
+    14:         </div>
+    15:         <input type="submit" class="btn btn-primary" value="Modifier le potin">
+    16:     <% end %>
+  
+app/views/events/edit.html.erb:13:in `block in _app_views_events_edit_html_erb__1976290245219913647_70306031040580'
+app/views/events/edit.html.erb:6:in `_app_views_events_edit_html_erb__1976290245219913647_70306031040580'
+Started GET "/events/56/edit" for 127.0.0.1 at 2019-02-14 02:12:58 +0100
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:35
+  Rendering events/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/events/edit.html.erb:1
+  Rendered events/edit.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 77ms (Views: 70.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/events/56/edit" for 127.0.0.1 at 2019-02-14 02:13:08 +0100
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:35
+  Rendering events/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/events/edit.html.erb:1
+  Rendered events/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/events/56" for 127.0.0.1 at 2019-02-14 02:13:24 +0100
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rmD8unQqx/Ic/xAsbAkwsiZ7HWnxTQ9B9iqyCc1ayLLKUJ4GBpNtZqaAcjx7TC8uf0OyoBAdnqj00MNbvdpg/w==", "event"=>{"title"=>"Video correction du projet semaine 1 jour 999", "description"=>" errjkghwrhgwerhg werg er wgr g rewg rgr  g wr ger gwr ", "location"=>"belgique", "start_date"=>"2019-02-23T01:00:00", "duration"=>"50", "price"=>"42"}, "id"=>"56"}
+No template found for EventsController#update, rendering head :no_content
+Completed 204 No Content in 24ms (ActiveRecord: 0.0ms)
+
+
+Started PATCH "/events/56" for 127.0.0.1 at 2019-02-14 02:18:44 +0100
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rmD8unQqx/Ic/xAsbAkwsiZ7HWnxTQ9B9iqyCc1ayLLKUJ4GBpNtZqaAcjx7TC8uf0OyoBAdnqj00MNbvdpg/w==", "event"=>{"title"=>"Video correction du projet semaine 1 jour 999", "description"=>" errjkghwrhgwerhg werg er wgr g rewg rgr  g wr ger gwr ", "location"=>"belgique", "start_date"=>"2019-02-23T01:00:00", "duration"=>"50", "price"=>"42"}, "id"=>"56"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:44
+  [1m[36mEvent Update (0.3ms)[0m  [1m[33mUPDATE "events" SET "title" = $1, "updated_at" = $2 WHERE "events"."id" = $3[0m  [["title", "Video correction du projet semaine 1 jour 999"], ["updated_at", "2019-02-14 01:18:44.183493"], ["id", 56]]
+  ↳ app/controllers/events_controller.rb:44
+  [1m[35m (71.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:44
+Redirected to http://localhost:3000/events/56
+Completed 302 Found in 95ms (ActiveRecord: 77.5ms)
+
+
+Started GET "/events/56" for 127.0.0.1 at 2019-02-14 02:18:44 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:12
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:10
+  Rendered events/show.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 37ms (Views: 31.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-14 02:18:47 +0100
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 104], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 108], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 106], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/events/index.html.erb:15
+  Rendered events/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/events/56" for 127.0.0.1 at 2019-02-14 02:18:50 +0100
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"56"}
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:12
+  Rendering events/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/events/show.html.erb:10
+  Rendered events/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 34ms (Views: 27.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/events/56/attendances/56" for 127.0.0.1 at 2019-02-14 02:18:58 +0100
+Processing by AttendancesController#show as HTML
+  Parameters: {"event_id"=>"56", "id"=>"56"}
+  Rendering attendances/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  ↳ app/views/attendances/show.html.erb:1
+  [1m[36mAttendance Load (0.3ms)[0m  [1m[34mSELECT "attendances".* FROM "attendances" WHERE "attendances"."event_id" = $1[0m  [["event_id", 56]]
+  ↳ app/views/attendances/show.html.erb:4
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/views/attendances/show.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  ↳ app/views/attendances/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 104], ["LIMIT", 1]]
+  ↳ app/views/attendances/show.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 104], ["LIMIT", 1]]
+  ↳ app/views/attendances/show.html.erb:5
+  Rendered attendances/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 31ms (Views: 24.5ms | ActiveRecord: 3.6ms)
+
+
