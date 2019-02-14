@@ -29,20 +29,6 @@
                         data-locale="auto">
                 </script>
             <% end %>
-<<<<<<< HEAD
-            <label class="amount">
-            <span>Pour rejoindre l'événement, merci de payer l'inscription :<br><span><%= @event.price %></span></span>
-            </label>
-        </article>
-
-        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                data-description="INSCRIPTION EVENT"
-                data-amount=<%= @event.price * 100 %>
-                data-currency="eur"
-                data-locale="auto"></script>
-=======
->>>>>>> 2669eb9c0338ea6ac4c4b9137e3e60b496b956cb
         <% end %>
     <% elsif current_user.id == @event.admin_id %>
         <a href="<%= event_attendance_path(@event.id) %>">mon espace événement</a>
