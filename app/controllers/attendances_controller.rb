@@ -6,6 +6,7 @@ class AttendancesController < ApplicationController
   def show
     # Méthode qui récupère le potin concerné et l'envoie à la view show (show.html.erb) pour affichage
     @attendance = Attendance.all.where(event_id: params[:event_id])
+    @event_id = params[:event_id]
   end
 
   def new
