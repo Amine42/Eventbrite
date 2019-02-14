@@ -30,6 +30,7 @@
         </div>
 
         <input type="submit" class="btn btn-primary" value="Modifier l'event">
+        <a href="<%= event_path(@event.id) %>" class="btn btn-primary" data-confirm="Supprimer cette event?" data-method="DELETE" >Supprimer l'event</a>
     <% end %>
 </div>
 <% else %>

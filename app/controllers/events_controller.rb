@@ -48,5 +48,10 @@ class EventsController < ApplicationController
   def destroy
     # Méthode qui récupère le potin concerné et le détruit en base
     # Une fois la suppression faite, on redirige généralement vers la méthode index (pour afficher la liste à jour)
+    @event = Event.find(params[:id])
+    if current_user == @event.admin_id
+      @event.destroy
+    end
+    redirect_to "/"
   end
 end
