@@ -1,0 +1,11 @@
+<% if user_signed_in? %>
+    <h1 class="text-center m-4 mb-5">Voici les membres de l'event!</h1>
+    <div class="text-center m-5">
+        <% @attendance.each do |attendance| %>
+            <p><%= User.find(attendance.user_id).first_name %> <%= User.find(attendance.user_id).last_name %></p>
+        <% end %>
+        <a href="<%= edit_event_path(@event_id) %>" class="btn btn-primary">Modifier l'event</a>
+    </div>
+<% else %>
+    <h1 class="text-center m-4 mb-5">Vous n'avez pas acces a cette page</h1>
+<% end %>

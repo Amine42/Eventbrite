@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   post 'events/create'
  
   devise_for :users
-  resources :events
+  resources :events do
+    resources :attendances
+  end
   resources :users
   resources :charges
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

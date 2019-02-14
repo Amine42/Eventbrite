@@ -7,14 +7,29 @@
     <p>cette event aura lieux dans cette ville: <%= @event.location %></p>
     <p>Participer a cette event coute : <%= @event.price %>euro!</p>
     <p>event cree par: <%= User.find(@event.admin_id).email %></p>
+    <% if user_signed_in? && current_user.id != @event.admin_id %>
+        <% if !(Attendance.where(event_id: @event.id, user_id: current_user.id).exists?) %>
+            <%= form_tag event_attendances_path(@event.id) do %>
+                <article>
+                    <% if flash[:error].present? %>
+                    <div id="error_explanation">
+                        <p><%= flash[:error] %></p>
+                    </div>
+                    <% end %>
+                    <label class="amount">
+                    <span>Pour rejoindre l'événement, merci de payer l'inscription :<br><span><%= @event.price %></span></span>
+                    </label>
+                </article>
 
-    <%= form_tag charges_path do %>
-        <article>
-            <% if flash[:error].present? %>
-            <div id="error_explanation">
-                <p><%= flash[:error] %></p>
-            </div>
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                        data-description="INSCRIPTION EVENT"
+                        data-amount="<%= @event.price * 100 %>"
+                        data-currency="eur"
+                        data-locale="auto">
+                </script>
             <% end %>
+<<<<<<< HEAD
             <label class="amount">
             <span>Pour rejoindre l'événement, merci de payer l'inscription :<br><span><%= @event.price %></span></span>
             </label>
@@ -26,7 +41,10 @@
                 data-amount=<%= @event.price * 100 %>
                 data-currency="eur"
                 data-locale="auto"></script>
+=======
+>>>>>>> 2669eb9c0338ea6ac4c4b9137e3e60b496b956cb
         <% end %>
-     <div>
-    
+    <% elsif current_user.id == @event.admin_id %>
+        <a href="<%= event_attendance_path(@event.id) %>">mon espace événement</a>
+    <% end %>
 </div>
