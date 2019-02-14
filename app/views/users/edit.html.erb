@@ -1,0 +1,25 @@
+<% if user_signed_in? %>
+
+<h1>Modification de vos informations</h1>
+
+<div class="col-6">
+    <%= form_for @user do |f|%>
+        <div class="form-group">
+            <label for="first_name">First name</label>
+            <%= f.text_field :first_name, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <label for="last_name">Last name</label>
+            <%= f.text_field :last_name, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <label for="description">votre description</label>
+            <%= f.text_area :description, class: "form-control" %>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Modifier les informations">
+    <% end %>
+</div>
+<% else %>
+    <h2>connectez vous pour editer cette page</h2>
+<% end %>
